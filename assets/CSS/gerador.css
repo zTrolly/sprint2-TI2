@@ -86,3 +86,49 @@
 .aux{
   text-align: center;
 }
+/*==============*/
+.armazenador{
+  margin-top: 60px;
+}
+
+.senha-armazenada{
+  display:  flex;
+  flex-direction: column;
+  max-width: max-content;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.lista_senhas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.butao__senha button{
+  width: 100%;
+  color:var(--color1);
+  border: 2px var(--color1) solid;
+  font-family: poppins;
+  background-color: var(--color2);
+  transition: .3s;
+}
+
+.butao__senha button:hover{
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+.nome__senha::after{
+  content: '/>';
+  width: 100px  ;
+  height: 3px;
+  color: var(--color1);
+}
+
+.nome__senha::before{
+  content: '<';
+  width: 100px  ;
+  height: 3px;
+  color: var(--color1);
+}

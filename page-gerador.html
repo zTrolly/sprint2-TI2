@@ -47,6 +47,7 @@
       </div>
     </nav>
   </header>
+
   <main class="container">
     <section class="gerador">
       <div class="input-box">
@@ -56,7 +57,7 @@
       </div>
     </section>
 
-    <div class="coletaDados row">
+    <section class="coletaDados row">
       <div class="textoRaw col-lg-4 col-md-4 col-sm-12 campo">
         <h1 class="aux">Criptografar</h1>
         <textarea name="1" id="0" cols="40" rows="10" style="resize: none"></textarea>
@@ -79,10 +80,35 @@
         </div>
       </div>
 
-    </div>
+    </section>
+
+    <section class="armazenador row">
+      <div>
+        <h2 class="titulo titulo-gerador">Armazenador de Senhas</h2>
+      </div>
+      <div class="lista_senhas">
+        <div class="senha-armazenada">
+          <h4 class="nome__senha">Senha 1</h4>
+          <input name="nome__Senha" id="nome__Senha1" cols="30" rows="1" style="resize: none" placeholder="Nome da Senha"></input>
+          <textarea name="descricao__Senha" id="descricao__Senha1" cols="30" rows="3" style="resize: none" placeholder="Descrição da Senha"></textarea>
+          <textarea name="senha__Senha" id="senha__Senha1" cols="30" rows="1" style="resize: none" placeholder="Senha"></textarea>
+          <div class="butao__senha">
+            <button>Salvar senha</button>
+          </div>
+        </div>
+        <div class="senha-armazenada">
+          <h4 class="nome__senha">Senha 2</h4>
+          <input name="nome__Senha" id="nome__Senha2" cols="30" rows="1" style="resize: none" placeholder="Nome da Senha"></input>
+          <textarea name="descricao__Senha" id="descricao__Senha2" cols="30" rows="3" style="resize: none" placeholder="Descrição da Senha"></textarea>
+          <textarea name="senha__Senha" id="senha__Senha2" cols="30" rows="1" style="resize: none" placeholder="Senha"></textarea>
+          <div class="butao__senha">
+            <button>Salvar senha</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
-
-
 
   <footer class="footer">
     <div class="bg">
@@ -116,8 +142,6 @@
       </section>
     </div>
   </footer>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script src="./assets/Js/gerador.js"></script>
