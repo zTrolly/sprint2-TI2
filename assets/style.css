@@ -1,0 +1,116 @@
+:root{
+  --color1: #ff971e;
+  --color2: #19181c;
+
+}
+main{
+  margin-top: 60px;
+}
+
+body{
+  background-color:#1c1f23;
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: var(--color1);
+  font-family: monospace;
+  letter-spacing: .2rem;
+  transition: .3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #fff;
+  letter-spacing: .3rem ;
+  transition: .3s;
+}
+.btn-outline-success {
+  color: var(--color1);
+  border-color: var(--color1);
+}
+.btn-outline-success:hover{
+  background-color: var(--color1);
+  color: #fff;
+  border: var(--color1);
+}
+.btn-outline-success{
+  outline: white;
+}
+.img__hero{
+  display:  flex;
+  padding: 0%;
+}
+
+.img__hero img{
+  width: 50%;
+  margin: 0 auto;
+  border: 3px solid var(--color1);
+  padding: 0px;
+}
+.hero{
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.txt__hero{
+  font-size: x-large;
+  font-family: poppins;
+}
+
+.titulo{
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: xxx-large;
+}
+
+.titulo::before{
+  content: '<';
+  width: 100px  ;
+  height: 3px;
+  color: var(--color1);
+}
+.titulo::after{
+  content: '/>';
+  width: 100px  ;
+  height: 3px;
+  color: var(--color1);
+}
+.oque_fazemos{
+  margin-top: 60px;
+}
+/*============================*/
+.img__OQF{
+  width: 500px; /* width of container */
+  height: 300px; /* height of container */
+  background: url(./imgs/hacker.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.img2__OQF{
+  width: 500px; /* width of container */
+  height: 300px; /* height of container */
+  background: url(./imgs/cadeado.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.conteudo2__OQF{
+  display: flex;
+  
+}
+
+.img__OQF img{
+  width: 100%;
+}
+
+
+
+@media (max-width: 767.98px) {
+  .img__hero{
+    margin-bottom: 60px;
+  }
+  .txt__hero{
+    text-align: center;
+  }
+  
+  }
