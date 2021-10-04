@@ -1,40 +1,10 @@
+@import url(./header.css);
+@import url(./footer.css);
 :root{
   --color1: #ff971e;
   --color2: #19181c;
-
-}
-main{
-  margin-top: 60px;
 }
 
-body{
-  background-color:#1c1f23;
-  color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-link{
-  color: var(--color1);
-  font-family: monospace;
-  letter-spacing: .2rem;
-  transition: .3s;
-}
-.navbar-dark .navbar-nav .nav-link:hover{
-  color: #fff;
-  letter-spacing: .3rem ;
-  transition: .3s;
-}
-.btn-outline-success {
-  color: var(--color1);
-  border-color: var(--color1);
-}
-.btn-outline-success:hover{
-  background-color: var(--color1);
-  color: #fff;
-  border: var(--color1);
-}
-.btn-outline-success{
-  outline: white;
-}
 .img__hero{
   display:  flex;
   padding: 0%;
@@ -76,34 +46,78 @@ body{
   height: 3px;
   color: var(--color1);
 }
+
+/*============================*/
 .oque_fazemos{
   margin-top: 60px;
 }
-/*============================*/
+
 .img__OQF{
   width: 500px; /* width of container */
   height: 300px; /* height of container */
-  background: url(./imgs/hacker.jpg) center no-repeat;
+  background: url(../imgs/hacker.jpg) center no-repeat;
   background-size: cover;
+  border-radius: 10px;
+  margin-right: 30px;
 }
 
 .img2__OQF{
   width: 500px; /* width of container */
   height: 300px; /* height of container */
-  background: url(./imgs/cadeado.jpg) center no-repeat;
+  background: url(../imgs/cadeado.jpg) center no-repeat;
   background-size: cover;
+  border-radius: 10px;
+  margin-left: 30px;
 }
 
 .conteudo2__OQF{
   display: flex;
-  
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-content: center;
+  font-family: 'poppins';
+  font-size: x-large;
+}
+.conteudo1__OQF{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'poppins';
+  font-size: x-large;
 }
 
 .img__OQF img{
   width: 100%;
 }
 
+.txt__OQF{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 
+.contato__OQF{
+  display:  flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contato__OQF a button{
+  font-size: x-large;
+}
+
+.btn{
+  color:var(--color1);
+  border: 2px var(--color1) solid;
+  font-family: poppins;
+  background-color: var(--color2);
+}
+.btn:hover{
+  background-color: var(--color1);
+  color: #19181c;
+}
 
 @media (max-width: 767.98px) {
   .img__hero{
@@ -112,5 +126,5 @@ body{
   .txt__hero{
     text-align: center;
   }
-  
+
   }

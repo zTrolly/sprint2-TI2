@@ -1,0 +1,35 @@
+.navbar-dark .navbar-nav .nav-link{
+  color: var(--color1);
+  font-family: monospace;
+  letter-spacing: .2rem;
+  transition: .3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #fff;
+  letter-spacing: .3rem ;
+  transition: .3s;
+}
+.btn-outline-success {
+  color: var(--color1);
+  border-color: var(--color1);
+}
+.btn-outline-success:hover{
+  background-color: var(--color1);
+  color: #fff;
+  border: var(--color1);
+}
+.btn-outline-success{
+  outline: white;
+}
+
+main{
+  margin-top: 60px;
+}
+
+body{
+  background-color:#1c1f23;
+  color: #fff;
+}
+#navbar .navbar{
+  background-color: var(--color2);
+}

@@ -1,0 +1,31 @@
+.final_card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+  background-color: var(--color2);
+}
+.bg{
+width: 100%;
+background-color: var(--color2);
+}
+.final_card h5{
+  color:  var(--color1);
+  font-size: xx-large;
+}
+.social__final_card ul {
+  padding: 0px;
+}
+.social__final_card ul li{
+  display: inline-block;
+  list-style: none;
+  margin-right: 30px;
+}
+.social__final_card ul li a{
+  font-size: x-large;
+  color: var(--color1);
+  transition: 0.3s;
+}
+.social__final_card ul li a:hover{
+  color: #fff;
+}

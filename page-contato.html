@@ -12,8 +12,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
   </style>
   <script src="https://kit.fontawesome.com/6200a03cb8.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./assets/CSS/style.css">
-  <title>BLUM3D | home</title>
+  <link rel="stylesheet" href="./assets/CSS/contato.css">
+  <title>BLUM3D | contato</title>
 </head>
 
 <body>
@@ -46,45 +46,16 @@
       </div>
     </nav>
   </header>
-
-  <main class="container">
-    <section class="row hero">
-      <div class="titulo__hero">
-        <h1 class="titulo">Quem Somos</h1>
-      </div>
-      <div class="img__hero col-md-6 col-lg-6 col-sm-12">
-        <img src="./assets/imgs/logo-preta1.png" alt="">
-      </div>
-      <div class="txt__hero  col-md-6 col-lg-6 col-sm-12">
-        <p>Somos uma empresa fictícia criada para fins acadêmicos, temos como objetivo elaborar uma internet mais segura para todos o mais simples possível. Esse site é parte dessa iniciativa. Faremos de tudo para ajudar a se sentir mais seguro na web. Por mais que nossa equipe seja nova temos muito para acrescentar, todos do nosso time são profissionais extremamente capacitados e com sede de inovação. O futuro está apenas a poucos passos de nós.</p>
-      </div>
-    </section>
-    <section class="oque_fazemos row">
-      <div class="titulo__OQF">
-        <h1 class="titulo">Oque fazemos</h1>
-      </div>
-      <article class="row conteudo1__OQF">
-        <div class="img__OQF col-md-6 col-lg-6 col-sm-12">
-          <!-- <img src="./assets/imgs/hacker.jpg" alt=""> -->
-        </div>
-        <div class="txt__OQF col-md-6 col-lg-6 col-sm-12">
-          <p>A internet está repleta de pessoas com más intenções, mas isso não é novidade para ninguém nós da BLUM3D estamos nos esforçando para tentar reduzir o impacto que hackers ou crackers possam fazer, e a forma mais simples e prática é melhorar as senhas dos usuários. É bastante comum as pessoas utilizarem as mesmas senhas para serviços diferentes por comodidade ou esquecimento, essa atitude não é nem um pouco segura, mas como resolver isso?</p>
-        </div>
-      </article>
-      <article class="row conteudo2__OQF">
-        <div class="img2__OQF col-md-6 col-lg-6 col-sm-12">
-          <!-- <img src="./assets/imgs/hacker.jpg" alt=""> -->
-        </div>
-        <div class="txt__OQF col-md-6 col-lg-6 col-sm-12">
-          <p>A BLUM3D é a resposta para essa pergunta, com o nosso armazenador de senhas e encriptador a sua segurança é garantida. Somente com o encriptador a sua segurança vai aumentar bastante, caracteres especiais dificultam muito a invasão por força bruta, injetar inúmeras senhas na tentativa de encontrar a certa. Mas esse é so o início da nossa empresa, toda a nossa equipe está empenhada em ser o escudo entre os usuários e a internet</p>
-        </div>
-      </article>
-      <div class="contato__OQF">
-        <a href="page-contato.html"><button type="button" class="btn btn-dark carregar">Entrar em contato</button></a>
-      </div>
-
-    </section>
-  </main>
+  <section class="form-contato">
+    <form action="https://api.staticforms.xyz/submit" method="post">
+      <input type="hidden" name="accessKey" value="3c484bc8-8d13-4c79-8c47-7f6a531178b6">
+      <input type="text" name="name" class="nome" placeholder="Seu Nome"> <!-- Optional -->
+      <input type="text" name="email" class="email" placeholder="Seu Email"> <!-- Optional -->
+      <textarea name="message" style="resize: none"></textarea> <!-- Optional -->
+      <input type="submit" value="Submit" class="btn" />
+    </form>
+  </section>
+  <p class="footer" style="text-align: center; color: #fff; opacity: 75%;">Assim que o formulário for enviado a página sera recarregada, não se preocupe não aconteceu erro algum!</p>
 
   <footer class="footer">
     <div class="bg">
