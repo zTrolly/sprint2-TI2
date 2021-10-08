@@ -1,6 +1,8 @@
+
 .final_card{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 60px;
   background-color: var(--color2);
@@ -28,4 +30,14 @@ background-color: var(--color2);
 }
 .social__final_card ul li a:hover{
   color: #fff;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color2);
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: var(--color1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color1);
 }

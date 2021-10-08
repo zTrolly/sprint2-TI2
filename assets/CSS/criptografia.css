@@ -1,0 +1,6 @@
+@import url(./footer.css);
+@import url(./header.css);
+:root{
+  --color1: #ff971e;
+  --color2: #19181c;
+}
