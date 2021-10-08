@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Breno Lopes">
-  <meta name="description" content="Página que contém o armazenador de senhas da BLUM3D.">
+  <meta name="description" content="Página principal da BLUM3DM, um trabalho feito para a disciplina de TI2.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -16,7 +16,131 @@
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Quem somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="page-gerador.html">Gerador de Senhas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="page-armazenador.html">Armazenador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="page-criptografia.html">Criptografia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="page-contato.html">Contato</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <section class="tutorial">
+    <p>O nosso sistema de criptografia completa o site em todos os sentidos, uma senha gerada pode ser criptografada facilmente no nosso sistema. Além de senhas qualquer texto que queira deixar seguro é altamente recomendado criptografa-lo</p>
+  </section>
+  <div>
+    <div class="aaaa">
+      <h2 class="titulo ">Criptografia</h2>
+    </div>
+    <section class="coletaDados ">
+
+      <div class="textoRaw campo">
+        <h1 class="aux">Criptografar</h1>
+        <textarea name="1" id="0" style="resize: none"></textarea>
+        <div class="btn__coletaDados">
+          <input type="button" value="Criptografar" onclick="Cript();">
+        </div>
+      </div>
+      <div class="criptografado campo">
+        <h1 class="aux">Criptografado</h1>
+        <textarea name="2" id="1" style="resize: none"></textarea>
+        <div class="btn__coletaDados">
+          <input type="button" value="limpar tudo" onclick="limpaTudo();">
+        </div>
+      </div>
+      <div class="descriptografado campo">
+        <h1 class="aux">Descriptografado</h1>
+        <textarea name="3" id="2" style="resize: none"></textarea>
+        <div class="btn__coletaDados">
+          <input type="button" value="Descriptografar" onclick="Descrip();">
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+
+  <script>
+    function ASC(String) {
+      return String.charCodeAt(0);
+    }
+    function CHAR(Ascii) {
+      return String.fromCharCode(Ascii);
+    }
+    var chave = "98asd70as9dadasdasd0as98da90sdds9f0sf8"
+    function Cript() {
+      let dados = document.getElementById('0').value;
+      localStorage.setItem('rawText', dados);
+      let texto = "";
+      let len;
+      let p = 0;
+      let i;
+
+      for (i = 0; i < dados.length; i++) {
+        p++;
+        len = (ASC(dados.substr(i, 1)) + (ASC(chave.substr(p, 1))));
+        if (p == 50) {
+          p = 1;
+        }
+        if (len > 255) {
+          len -= 256;
+        }
+        texto += (CHAR(len));
+      }
+      document.getElementById("1").value = texto;
+    }
+    function Descrip() {
+      let dados = document.getElementById('1').value;
+      let texto = "";
+      let len;
+      let p = 0;
+      let i;
+      for (i = 0; i < dados.length; i++) {
+        p++;
+        len = (ASC(dados.substr(i, 1)) - (ASC(chave.substr(p, 1))));
+        if (p == 50) {
+          p = 1;
+        }
+        if (len < 0) {
+          len += 256;
+        }
+        texto += (CHAR(len));
+      }
+      document.getElementById("2").value = texto;
+    }
+    function limpaTudo() {
+      for (var i = 0; i < 3; i++) {
+        document.getElementById(i).value = "";
+      }
+    }
+  </script>
 </body>
 
 </html>

@@ -84,36 +84,3 @@ main{
   color: #19181c;
 }
 
-/* .coletaDados{
-  margin-top: 60px;
-}
-.campo{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-}
-
-.btn__coletaDados{
-  display: flex;
-  flex-direction: row;
-  margin-top: 5px;
-}
-
-.btn__coletaDados input{
-  margin: 0 auto;
-  width: 50%;
-  color:var(--color1);
-  border: 2px var(--color1) solid;
-  font-family: poppins;
-  background-color: var(--color2);
-}
-
-.btn__coletaDados input:hover{
-  background-color: var(--color1);
-  color: var(--color2);
-}
-
-.aux{
-  text-align: center;
-} */
-/*==============*/
