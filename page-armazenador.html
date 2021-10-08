@@ -55,33 +55,52 @@
     <div class="tutorial">
       <p>O nosso armazenador serve para uma gestão de senhas mais eficas, é possível associar uma descrição e nome para uma senha. O armazenador é uma ferramenta mais poderosa qunado usada juntamente com a <a href="page-criptografia.html">Criptografia</a> disponível no nosso site.</p>
     </div>
-    <section class="armazenador row">
-      <div>
-        <h2 class="titulo titulo-gerador">Armazenador de Senhas</h2>
-      </div>
-      <div class="lista_senhas">
-        <div class="senha-armazenada">
-          <h4 class="nome__senha">Senha 1</h4>
-          <input name="nome__Senha" id="nome__Senha1" cols="30" rows="1" style="resize: none" placeholder="Nome da Senha"></input>
-          <textarea name="descricao__Senha" id="descricao__Senha1" cols="30" rows="3" style="resize: none" placeholder="Descrição da Senha"></textarea>
-          <textarea name="senha__Senha" id="senha__Senha1" cols="30" rows="1" style="resize: none" placeholder="Senha"></textarea>
-          <div class="butao__senha">
-            <button>Salvar senha</button>
+    <section class="container2">
+      <form id="login">
+        <div>
+          <h2 class="titulo titulo-gerador">Armazenador de Senhas</h2>
+        </div>
+        <div class="lista_senhas">
+          <div class="senha1 bagulhoDaSenha">
+            <label for="tiposenha1">Tipo:</label>
+            <input type="tipo" id="tiposenha1" name="tiposenha1" />
+
+            <label for="senha1">Senha:</label>
+            <input type="senha" id="senha1" name="senha1" />
+
+            <label for="descricao_senha_1">Descrição:</label>
+            <textarea type="descricao" id="descricao_senha_1" name="descricao_senha_1" class="descricao_senha" style="resize: none"></textarea>
+
+            <button type="button" id="btn" id="apagarPrimeiro" onclick="apagarPrimeiro.onsubmit()">Limpar Primeiro Campo</button>
+          </div>
+          <div class="senha2 bagulhoDaSenha">
+            <label for="tiposenha2">Tipo:</label>
+            <input type="tipo" id="tiposenha2" name="tiposenha2" />
+
+            <label for="senha2">Senha:</label>
+            <input type="senha" id="senha2" name="senha2" />
+
+            <label for="descricao_senha_2">Descrição:</label>
+            <textarea type="descricao" id="descricao_senha_2" name="descricao_senha_2" class="descricao_senha" style="resize: none"></textarea>
+
+            <button type="button" id="btn" id="apagarSegundo" onclick="apagarSegundo.onsubmit()">Limpar Segundo Campo</button>
           </div>
         </div>
-        <div class="senha-armazenada">
-          <h4 class="nome__senha">Senha 2</h4>
-          <input name="nome__Senha" id="nome__Senha2" cols="30" rows="1" style="resize: none" placeholder="Nome da Senha"></input>
-          <textarea name="descricao__Senha" id="descricao__Senha2" cols="30" rows="3" style="resize: none" placeholder="Descrição da Senha"></textarea>
-          <textarea name="senha__Senha" id="senha__Senha2" cols="30" rows="1" style="resize: none" placeholder="Senha"></textarea>
-          <div class="butao__senha">
-            <button>Salvar senha</button>
+        <div class="teste">
+          <div class="confirmar">
+            <button type="button" id="btn" id="entrar" onclick="login.onsubmit()">Salvar</button>
+          </div>
+          <div class="btn-group-vertical" id="alterar">
+            <button type="button" id="btn" id="apagarTudo" onclick="apagarTudo.onsubmit()">Limpar
+              todos Dados</button>
           </div>
         </div>
-      </div>
+      </form>
     </section>
 
   </main>
+
+  <script src="./assets/Js/armazenador.js"></script>
 </body>
 
 </html>
