@@ -47,20 +47,7 @@
 .tutorial a:hover{
   text-decoration: underline;
 }
-#btn{
-  color:var(--color1);
-  border: 2px var(--color1) solid;
-  font-family: poppins;
-  text-align: center;
-  margin-top: 25px;
-  cursor: pointer;
-  user-select: none;
-  transition: 0.3s;
-}
-#btn:hover{
-  background-color: var(--color1);
-  color: #19181c;
-}
+
 
 .bagulhoDaSenha{
   display: flex;
@@ -81,7 +68,7 @@
   flex-direction: row;
   gap: 20px;
 }
-#btn{
+.btn-dark{
   color:var(--color1);
   border: 2px var(--color1) solid;
   background-color: var(--color2);
@@ -92,7 +79,7 @@
   user-select: none;
   transition: 0.3s;
 }
-#btn:hover{
+.btn-dark:hover{
   background-color: var(--color1);
   color: #19181c;
 }

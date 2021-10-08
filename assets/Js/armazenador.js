@@ -20,14 +20,12 @@ window.onload = () => {
       alert(`Senhas Cadastradas.`);
       evento.preventDefault();
   };
-
   apagarTudo.onsubmit = (evento) => {
     localStorage.clear();
     alert(`As senhas foram apagadas.`)
     document.location.reload(true);
     evento.preventDefault();
   };
-
   apagarPrimeiro.onsubmit = (evento) => {
     localStorage.removeItem('tiposenha1');
     localStorage.removeItem('senha1');
@@ -36,7 +34,6 @@ window.onload = () => {
     document.location.reload(true);
     evento.preventDefault();
   };
-
   apagarSegundo.onsubmit = (evento) => {
     localStorage.removeItem('tiposenha2');
     localStorage.removeItem('senha2');
@@ -45,4 +42,5 @@ window.onload = () => {
     document.location.reload(true);
     evento.preventDefault();
   };
+
 };
